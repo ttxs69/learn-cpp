@@ -11,6 +11,10 @@
 #include <iostream>
 int main() {
   // print hello world to stdout
-  std::cout << "Hello World!" << std::endl;
+  std::cout << "Please give me your best number:" << std::endl;
+  int some_number;
+  std::cin >> some_number;
+  std::cout << "Your best number is: " << some_number << std::endl;
+  std::cerr << "ERROR: this is a error message!" << std::endl;
   return 0;
 }
