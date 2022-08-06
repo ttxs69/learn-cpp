@@ -10,7 +10,7 @@
  */
 #include <iostream>
 int main() {
-  // print hello world to stdout
+  // print question
   std::cout << "Please give me your best number:" << std::endl;
   int some_number;
   std::cin >> some_number;
