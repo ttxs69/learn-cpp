@@ -7,7 +7,7 @@
 5. vscode extension:
     1. gitlens
     2. cmake
-    3. clangd
+    3. ~clangd~ // file indexing is too slow when open big code base, use `C/C++ Extension Pack` instead
     4. Doxygen
     5. vscode-icons
 6. change vscode settings
