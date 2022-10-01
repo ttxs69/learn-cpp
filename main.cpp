@@ -8,13 +8,13 @@
  * @copyright Copyright (c) 2022
  *
  */
+#include <algorithm>
 #include <iostream>
+#include <string>
+#include <vector>
+
 int main() {
-  // print question
-  std::cout << "Please give me your best number:" << std::endl;
-  int some_number;
-  std::cin >> some_number;
-  std::cout << "Your best number is: " << some_number << std::endl;
-  std::cerr << "ERROR: this is a error message!" << std::endl;
+  const std::string s = "Hello, World!";
+  std::cout << s << "\n";
   return 0;
 }
