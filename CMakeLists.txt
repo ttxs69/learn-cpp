@@ -8,6 +8,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_compile_options(-g -Wall -Wextra -pedantic -Werror)
 
+# for address sanitizer
+add_compile_options(-fsanitize=address -fno-omit-frame-pointer -O1 -fno-optimize-sibling-calls)
+add_link_options(-fsanitize=address)
+
+# for undefined sanitizer
+add_compile_options(-fsanitize=undefined)
+add_link_options(-fsanitize=undefined)
+
 add_executable(learn-cpp
     main.cpp
 )
