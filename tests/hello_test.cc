@@ -1,6 +1,7 @@
 #include "binarySearch.h"
 #include "maxProfit2.h"
 #include "removeDuplicates.h"
+#include "rotate.h"
 #include <gtest/gtest.h>
 #include <vector>
 // Demonstrate some basic assertions.
@@ -53,4 +54,68 @@ TEST(maxProfit2Test, maxProfit2Test_Test3) {
   int expected = 0;
   int result = maxProfit2(prices);
   EXPECT_EQ(result, expected);
+}
+
+TEST(rotate1Test, rotate1Test_Test1) {
+  std::vector<int> before = {1, 2, 3, 4, 5, 6, 7};
+  int k = 3;
+  rotate1(before, k);
+  std::vector<int> expected = {5, 6, 7, 1, 2, 3, 4};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate1Test, rotate1Test_Test2) {
+  std::vector<int> before = {-1, -100, 3, 99};
+  int k = 2;
+  rotate1(before, k);
+  std::vector<int> expected = {3, 99, -1, -100};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate2Test, rotate2Test_Test1) {
+  std::vector<int> before = {1, 2, 3, 4, 5, 6, 7};
+  int k = 3;
+  rotate2(before, k);
+  std::vector<int> expected = {5, 6, 7, 1, 2, 3, 4};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate2Test, rotate2Test_Test2) {
+  std::vector<int> before = {-1, -100, 3, 99};
+  int k = 2;
+  rotate2(before, k);
+  std::vector<int> expected = {3, 99, -1, -100};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate3Test, rotate3Test_Test1) {
+  std::vector<int> before = {1, 2, 3, 4, 5, 6, 7};
+  int k = 3;
+  rotate3(before, k);
+  std::vector<int> expected = {5, 6, 7, 1, 2, 3, 4};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate3Test, rotate3Test_Test2) {
+  std::vector<int> before = {-1, -100, 3, 99};
+  int k = 2;
+  rotate3(before, k);
+  std::vector<int> expected = {3, 99, -1, -100};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate4Test, rotate4Test_Test1) {
+  std::vector<int> before = {1, 2, 3, 4, 5, 6, 7};
+  int k = 3;
+  rotate4(before, k);
+  std::vector<int> expected = {5, 6, 7, 1, 2, 3, 4};
+  EXPECT_EQ(before, expected);
+}
+
+TEST(rotate4Test, rotate4Test_Test2) {
+  std::vector<int> before = {-1, -100, 3, 99};
+  int k = 2;
+  rotate4(before, k);
+  std::vector<int> expected = {3, 99, -1, -100};
+  EXPECT_EQ(before, expected);
 }
