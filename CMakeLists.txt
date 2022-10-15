@@ -36,15 +36,15 @@ FetchContent_MakeAvailable(googletest)
 include(CTest)
 
 add_executable(
-  hello_test
+  tests
   tests/hello_test.cc
 )
 
-target_include_directories(hello_test PUBLIC leetcode)
+target_include_directories(tests PUBLIC leetcode)
 target_link_libraries(
-  hello_test
+  tests
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(hello_test)
+gtest_discover_tests(tests)
