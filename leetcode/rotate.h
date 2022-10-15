@@ -79,8 +79,9 @@ void rotate4(std::vector<int> &nums, int k) {
   int size = nums.size();
   int step = k % size;
   int index = 0;
-  std::vector<bool> visited(size, false);
   int count = 0;
+
+  std::vector<bool> visited(size, false);
   while (count < size) {
     int from = nums[index];
     int target = index + step;

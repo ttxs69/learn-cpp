@@ -6,7 +6,7 @@ int removeDuplicates(std::vector<int> &nums) {
   if (count < 2) {
     return count;
   }
-  // size bigger than 1
+  // if size is bigger than 1
   int index = 1;
   int pre = nums[0];
   for (size_t i = 1; i < count; i++) {
